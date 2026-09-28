@@ -59,7 +59,7 @@ function saveCart() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(car
 function findProduct(id) { return PRODUCTS.find((product) => product.id === id); }
 function findSection(id) { return SECTIONS.find((section) => section.id === id); }
 function getProductVisual(product) { return findSection(product.section)?.image || "coffee"; }
-function getMenuImageUrl(name) { return `/assets/menu-items/${encodeURIComponent(name.trim().toLocaleLowerCase("ru-RU"))}.webp`; }
+function getMenuImageUrl(name) { return `assets/menu-items/${encodeURIComponent(name.trim().toLocaleLowerCase("ru-RU"))}.webp`; }
 function formatPrice(price) { return new Intl.NumberFormat("ru-RU", { style: "currency", currency: "RUB", maximumFractionDigits: 0 }).format(price); }
 function getCartLines() { return cart.map((line) => ({ ...findProduct(line.id), quantity: line.quantity })).filter((line) => line.id); }
 function getCartCount() { return cart.reduce((total, item) => total + item.quantity, 0); }
