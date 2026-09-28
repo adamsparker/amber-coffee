@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#DDD7D1" />
+    <meta name="description" content="Amber Coffee — спешалти-кофе и авторское меню." />
+    <link rel="icon" href="/assets/logo.svg" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <script type="module" src="script.js"></script>
+    <title>Amber Coffee | Главная</title>
+  </head>
+  <body class="page page--home">
+    <header class="site-header" id="top">
+      <a class="brand" href="index.html" aria-label="Amber Coffee — главная">
+        <img src="/assets/logo.svg" alt="" class="brand__mark" />
+        <span class="brand__type">Amber</span>
+      </a>
+      <nav class="main-nav" aria-label="Главная навигация">
+        <a href="menu.html">Меню</a>
+      <a href="geo:43.318340,45.698850?q=43.318340,45.698850(бульвар М.А. Эсамбаева, 8)">Как добраться?</a>
+      </nav>
+      <div class="header-actions">
+        <button class="mobile-menu-button" type="button" data-menu-toggle aria-expanded="false" aria-label="Открыть меню"><i class="ph ph-list" aria-hidden="true"></i></button>
+        <button class="cart-trigger" type="button" data-cart-open aria-label="Открыть корзину">
+          <i class="ph ph-handbag cart-trigger__icon" aria-hidden="true"></i><span>Корзина</span><b data-cart-count hidden>0</b>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about__kicker"><video class="about__video" data-main-video muted loop playsinline preload="none" aria-hidden="true"><source data-src="/assets/main-video.webm" type="video/webm" /></video></div>
+        <div class="about__content"><p class="eyebrow">О кофейне</p><h2 id="about-title">Хороший кофе<br />не требует <em>спешки.</em></h2><p>В Amber собрали меню, в котором легко ориентироваться: любимая классика, честные продукты и сезонные вкусы без лишнего шума.</p><a class="primary-button" href="menu.html">Открыть меню <i class="ph ph-arrow-right" aria-hidden="true"></i></a><a class="daily-note__link geo-link" href="menu.html?category=coffee">Как добраться?</a></div>
+      </section>
+    </main>
+
+      <section class="categories" id="categories" aria-labelledby="category-title">
+        <div class="section-heading section-heading--split">
+          <div><p class="eyebrow">Начните с выбора</p><h2 id="category-title">Что вам<br />приготовить?</h2></div>
+          <p>Три причины задержаться у стойки чуть дольше: напитки, полноценная еда и десерты к разговору.</p>
+        </div>
+        <div class="category-grid">
+          <a class="category-card category-card--drinks" href="menu.html?category=coffee"><span class="category-card__arrow"><i class="ph ph-arrow-down-right" aria-hidden="true"></i></span><span><strong>Напитки</strong><small>Кофе, чай и сезонные сочетания</small></span></a>
+          <a class="category-card category-card--food" href="menu.html?category=food"><span class="category-card__arrow"><i class="ph ph-arrow-down-right" aria-hidden="true"></i></span><span><strong>Еда</strong><small>Тёплые завтраки и авторские блюда</small></span></a>
+          <a class="category-card category-card--desserts" href="menu.html?category=dessert"><span class="category-card__arrow"><i class="ph ph-arrow-down-right" aria-hidden="true"></i></span><span><strong>Десерты</strong><small>То, что стоит оставить на потом</small></span></a>
+        </div>
+      </section>
+
+      <section class="daily-note" aria-labelledby="daily-note-title">
+        <div class="daily-note__copy"><p class="eyebrow eyebrow--light">Италия в объёме 30 мл.</p><h2 id="daily-note-title">Эспрессо<br />и чашка тепла.</h2><p></p><a class="daily-note__link" href="menu.html?category=coffee">Выбрать напиток <i class="ph ph-arrow-right" aria-hidden="true"></i></a></div>
+        <div class="daily-note__price"></div>
+      </section>
+ 
+    <section class="home-intro" aria-labelledby="intro-title">
+        <p class="eyebrow">Городская кофейня · каждый день</p>
+        <div class="home-intro__layout">
+          <h1 id="intro-title">Вкус, который<br /><em>остаётся с вами.</em></h1>
+          <div class="home-intro__note"><p>Кофе, еда и десерты — чтобы сделать паузу чуть теплее.</p><a class="primary-button" href="menu.html">Открыть меню <i class="ph ph-arrow-down-right" aria-hidden="true"></i></a></div>
+        </div>
+      </section>
+
+    <footer class="site-footer"><a class="brand brand--footer" href="#top"><img src="/assets/logo.svg" alt="" class="brand__mark" /><span class="brand__type">Amber</span></a><p>Кофе и время для себя.</p><a href="#top">Наверх <i class="ph ph-arrow-up" aria-hidden="true"></i></a></footer>
+    <div class="cart-overlay" data-cart-close></div>
+    <aside class="cart-panel" aria-label="Корзина" aria-hidden="true">
+      <div class="cart-panel__top"><div><p class="eyebrow">Ваш заказ</p><h2>Корзина</h2></div><button class="cart-close" type="button" data-cart-close aria-label="Закрыть корзину"><i class="ph ph-x" aria-hidden="true"></i></button></div>
+      <div class="cart-content" data-cart-content></div>
+    </aside>
+    <div class="notice" data-notice role="status" aria-live="polite"></div>
+  </body>
+</html>

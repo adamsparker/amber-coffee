@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#36322E" />
+    <meta name="description" content="Amber Coffee — CRM-заглушка для обработки заказов." />
+    <link rel="icon" href="/assets/logo.svg" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <script type="module" src="script.js"></script>
+    <title>Amber Coffee | CRM</title>
+  </head>
+  <body class="page page--admin">
+    <div class="admin-shell" data-admin-root>
+      <aside class="admin-sidebar">
+        <a class="admin-brand" href="index.html" aria-label="Вернуться на сайт Amber Coffee">
+          <img src="/assets/logo.svg" alt="" />
+          <span>Amber<br />CRM</span>
+        </a>
+        <nav class="admin-nav" aria-label="Навигация CRM">
+          <a class="admin-nav__item admin-nav__item--active" href="#orders"><i class="ph ph-receipt" aria-hidden="true"></i>Заказы <b data-admin-nav-count>4</b></a>
+          <button class="admin-nav__item" type="button" data-admin-placeholder><i class="ph ph-coffee" aria-hidden="true"></i>Меню</button>
+          <button class="admin-nav__item" type="button" data-admin-placeholder><i class="ph ph-users" aria-hidden="true"></i>Гости</button>
+          <button class="admin-nav__item" type="button" data-admin-placeholder><i class="ph ph-chart-line-up" aria-hidden="true"></i>Отчёты</button>
+        </nav>
+        <div class="admin-sidebar__bottom"><span>Демо-режим</span><p>Статичная CRM-заглушка без подключения к базе данных.</p></div>
+      </aside>
+
+      <main class="admin-main" id="orders">
+        <header class="admin-header">
+          <div><p class="admin-overline">Операционный центр</p><h1>Заказы</h1></div>
+          <div class="admin-header__actions"><button type="button" class="admin-icon-button" data-admin-placeholder aria-label="Уведомления"><i class="ph ph-bell" aria-hidden="true"></i><span></span></button><a class="admin-user" href="index.html"><i class="ph ph-user-circle" aria-hidden="true"></i><span>Администратор</span></a></div>
+        </header>
+
+        <section class="admin-stats" aria-label="Сводка по заказам">
+          <article class="admin-stat"><p>Новые</p><strong data-admin-stat-new>4</strong><span>за сегодня</span></article>
+          <article class="admin-stat"><p>В работе</p><strong>7</strong><span>на кухне</span></article>
+          <article class="admin-stat"><p>Выручка</p><strong>18 420 ₽</strong><span>за смену</span></article>
+          <article class="admin-stat"><p>Средний чек</p><strong>1 164 ₽</strong><span>за смену</span></article>
+        </section>
+
+        <section class="admin-workspace">
+          <div class="admin-list-panel">
+            <div class="admin-panel-heading"><div><p class="admin-overline">Очередь</p><h2>Текущие заказы</h2></div><button type="button" class="admin-add-button" data-admin-create><i class="ph ph-plus" aria-hidden="true"></i>Новый</button></div>
+            <label class="admin-search"><i class="ph ph-magnifying-glass" aria-hidden="true"></i><input type="search" placeholder="Поиск по номеру или гостю" data-admin-search /></label>
+            <div class="admin-filters" role="group" aria-label="Фильтр заказов"><button type="button" class="admin-filter admin-filter--active" data-admin-filter="all">Все</button><button type="button" class="admin-filter" data-admin-filter="new">Новые</button><button type="button" class="admin-filter" data-admin-filter="work">В работе</button><button type="button" class="admin-filter" data-admin-filter="ready">Готовы</button></div>
+            <div class="admin-order-list" data-admin-order-list></div>
+          </div>
+          <aside class="admin-detail-panel" data-admin-detail></aside>
+        </section>
+      </main>
+    </div>
+    <div class="admin-toast" data-admin-toast role="status" aria-live="polite"></div>
+  </body>
+</html>
