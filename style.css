@@ -382,7 +382,7 @@ h2 em {
   align-items: flex-end;
   padding: 78px max(32px, calc((100vw - 1280px) / 2));
   color: var(--white);
-  background: linear-gradient(90deg, rgba(34, 27, 23, 0.84), rgba(34, 27, 23, 0.48) 45%, rgba(34, 27, 23, 0.06)), url(assets/espresso.png) center / cover no-repeat;
+  background: linear-gradient(90deg, rgba(34, 27, 23, 0.84), rgba(34, 27, 23, 0.48) 45%, rgba(34, 27, 23, 0.06)), url(./assets/espresso.png) center / cover no-repeat;
   background-size: cover;
 }
 
@@ -633,20 +633,20 @@ h2 em {
 }
 
 .menu-product--food {
-  background-image: url("assets/amber-food.jpg");
+  background-image: url("./assets/amber-food.jpg");
 }
 
 .menu-product--dessert {
-  background-image: url("assets/amber-desserts.jpg");
+  background-image: url("./assets/amber-desserts.jpg");
 }
 
 .menu-product--coffee,
 .menu-product--tea {
-  background-image: url("assets/amber-drinks.jpg");
+  background-image: url("./assets/amber-drinks.jpg");
 }
 
 .menu-product--cold {
-  background-image: url("assets/amber-hero.jpg");
+  background-image: url("./assets/amber-hero.jpg");
 }
 
 .menu-product__content {
@@ -2021,20 +2021,20 @@ h2 em {
 }
 
 .cart-line__thumbnail--food {
-  background-image: url("assets/amber-food.jpg");
+  background-image: url("./assets/amber-food.jpg");
 }
 
 .cart-line__thumbnail--dessert {
-  background-image: url("assets/amber-desserts.jpg");
+  background-image: url("./assets/amber-desserts.jpg");
 }
 
 .cart-line__thumbnail--coffee,
 .cart-line__thumbnail--tea {
-  background-image: url("assets/amber-drinks.jpg");
+  background-image: url("./assets/amber-drinks.jpg");
 }
 
 .cart-line__thumbnail--cold {
-  background-image: url("assets/amber-hero.jpg");
+  background-image: url("./assets/amber-hero.jpg");
 }
 
 .cart-line__main {
